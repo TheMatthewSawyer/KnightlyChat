@@ -48,8 +48,7 @@ io.on('connection', function (socket) {
 
 });
 
-
-
-server.listen(1337, function () {
+let port = process.env.PORT || 1337
+server.listen(port, function () {
   console.log(`Listening on ${server.address().port}`);
 });
